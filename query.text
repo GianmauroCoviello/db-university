@@ -30,13 +30,16 @@ WHERE YEAR(CURRENT_DATE) - YEAR(date_of_birth) > 30
 
 
 esercizio 4
-SELECT*
-FROM  `courses `
+
 SELECT  *
 FROM  `courses`
 WHERE  `period` = 'I semestre'
 AND  year = 1;
 
 
-Esercizio 5
+Esercizio 7
+
+SELECT COUNT(*)
+AS `n_departments`
+FROM `departments`;
 
