@@ -14,19 +14,19 @@ laurea (286)
 Esercizio 1
 SELECT *
 FROM `students`
-WHERE YEAR(`date_of_birth`) =  1990 
+WHERE YEAR(`date_of_birth`) =  1990 ;
 
 
 Esercizio 2
 SELECT *
 FROM `courses`
-WHERE `cfu` > 10
+WHERE `cfu` > 10;
 
 
 Esercizio 3
 SELECT name, YEAR(CURRENT_DATE) - YEAR(date_of_birth) AS age
 FROM students
-WHERE YEAR(CURRENT_DATE) - YEAR(date_of_birth) > 30
+WHERE YEAR(CURRENT_DATE) - YEAR(date_of_birth) > 30;
 
 
 esercizio 4
@@ -36,10 +36,34 @@ FROM  `courses`
 WHERE  `period` = 'I semestre'
 AND  year = 1;
 
+Esercizio 5
+
+SELECT *
+FROM `exams`
+WHERE TIME(`hour`) > '14:00:00'
+AND `date` = '2020/06/20';
+
+
+
+Esercizio 6
+
+SELECT *
+FROM `degrees`
+WHERE `level` LIKE 'Magistrale';
+
+
 
 Esercizio 7
 
 SELECT COUNT(*)
 AS `n_departments`
 FROM `departments`;
+
+
+Esercizio 8
+
+SELECT COUNT(*)
+AS `n_teachers`
+FROM `teachers`
+WHERE `phone` IS NULL;
 
