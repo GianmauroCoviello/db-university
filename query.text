@@ -27,3 +27,16 @@ Esercizio 3
 SELECT name, YEAR(CURRENT_DATE) - YEAR(date_of_birth) AS age
 FROM students
 WHERE YEAR(CURRENT_DATE) - YEAR(date_of_birth) > 30
+
+
+esercizio 4
+SELECT*
+FROM  `courses `
+SELECT  *
+FROM  `courses`
+WHERE  `period` = 'I semestre'
+AND  year = 1;
+
+
+Esercizio 5
+
