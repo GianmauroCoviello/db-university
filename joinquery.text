@@ -2,3 +2,9 @@ esercizio n1
 SELECT COUNT(*) AS  `numero_iscritti `,YEAR(enrolment_date) as  `anno `
 FROM  `students `
 GROUP BY  `anno `
+
+
+esercizio n2
+SELECT COUNT(*) as  `numero_insegnanti`, `office_andress`
+FROM  `teachers `
+GROUP BY  `office_andress `
