@@ -1,3 +1,5 @@
+QUERY GROUP BY
+
 esercizio n1
 SELECT COUNT(*) AS  `numero_iscritti `,YEAR(enrolment_date) as  `anno `
 FROM  `students `
@@ -8,3 +10,14 @@ esercizio n2
 SELECT COUNT(*) as  `numero_insegnanti`, `office_andress`
 FROM  `teachers `
 GROUP BY  `office_andress `
+
+QUERY JOIN
+
+esercizio n1
+SELECT `degrees`.`name`, COUNT(`students`.`id`) FROM `degrees` JOIN `students` ON `degrees`.`id` = `students`.`degree_id` WHERE `degrees`.`name` LIKE 'Corso di Laurea in Economia';
+
+esercizio n2
+SELECT `degrees`.*
+FROM `degrees`
+JOIN `departements` ON `degrees`.`departements_id`=`departments_id`
+WHERE `degrees`.`level`= 'magistrale' AND `departments`.`name`= 'Dipartimento di Neuroscienze'
