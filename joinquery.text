@@ -21,3 +21,7 @@ SELECT `degrees`.*
 FROM `degrees`
 JOIN `departements` ON `degrees`.`departements_id`=`departments_id`
 WHERE `degrees`.`level`= 'magistrale' AND `departments`.`name`= 'Dipartimento di Neuroscienze'
+
+esercizio n3
+SELECT `students`.*, degrees.name, departments.name FROM `students` 
+JOIN degrees ON students.degree_id = degrees.id JOIN departments ON degrees.department_id = departments.id ORDER BY students.name , students.surname;
